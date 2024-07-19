@@ -1,0 +1,1036 @@
+{
+	"info": {
+		"_postman_id": "5cda8d92-c2a3-4adb-952e-90a147453672",
+		"name": "Restaurant System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18448022",
+		"_collection_link": "https://florista-team.postman.co/workspace/Florista-Team-Workspace~d2377610-36ab-4910-82b0-69ada838bf6e/collection/18448022-5cda8d92-c2a3-4adb-952e-90a147453672?action=share&source=collection_link&creator=18448022"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Api",
+					"item": [
+						{
+							"name": "Restaurants",
+							"item": [
+								{
+									"name": "add restaurant",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "9slVMMnrbGJNEWYMK7OWVFn5MT8iy9JzRauz3C7Qe3c653be",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "abo alabed",
+													"type": "text"
+												},
+												{
+													"key": "address",
+													"value": "street 1",
+													"type": "text"
+												},
+												{
+													"key": "phone",
+													"value": "0935296026",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "localhost:8000/api/v1/admin/restaurants",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"restaurants"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "show",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "5d5o7BbdVcMEZVtGV4Un5qQgl0dyOrFu6K99gHFg61e2b363",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/v1/admin/restaurants/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"restaurants",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "5d5o7BbdVcMEZVtGV4Un5qQgl0dyOrFu6K99gHFg61e2b363",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "abo",
+													"type": "text"
+												},
+												{
+													"key": "address",
+													"value": "street 7",
+													"type": "text"
+												},
+												{
+													"key": "phone",
+													"value": "0987646477",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": "_method",
+													"value": "PATCH",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "localhost:8000/api/v1/admin/restaurants/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"restaurants",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "delete",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "1h2lfAGoCeGbgjAordU1S8znsJUS7TmJjzprjKzi84754a14",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/v1/admin/restaurants/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"restaurants",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "get all",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "1h2lfAGoCeGbgjAordU1S8znsJUS7TmJjzprjKzi84754a14",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/v1/admin/restaurants",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"restaurants"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Categories",
+							"item": [
+								{
+									"name": "add",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "1h2lfAGoCeGbgjAordU1S8znsJUS7TmJjzprjKzi84754a14",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "restaurant_id",
+													"value": "2",
+													"type": "text"
+												},
+												{
+													"key": "name",
+													"value": "burger",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "localhost:8000/api/v1/admin/categories",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"categories"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "show",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "1h2lfAGoCeGbgjAordU1S8znsJUS7TmJjzprjKzi84754a14",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/v1/admin/categories/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"categories",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "1h2lfAGoCeGbgjAordU1S8znsJUS7TmJjzprjKzi84754a14",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "salad",
+													"type": "text"
+												},
+												{
+													"key": "_method",
+													"value": "PATCH",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "localhost:8000/api/v1/admin/categories/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"categories",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "delete",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "1h2lfAGoCeGbgjAordU1S8znsJUS7TmJjzprjKzi84754a14",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/v1/admin/categories/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"categories",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "get all",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "1h2lfAGoCeGbgjAordU1S8znsJUS7TmJjzprjKzi84754a14",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/v1/admin/categories",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"categories"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "MenuItems",
+							"item": [
+								{
+									"name": "add items",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "csLcbbaqShTZRSj2Qhz9sR6WvF70vpeNuuotD5gF9709d9c2",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"category_id\": 1,\r\n    \"name\": \"Burger\",\r\n    \"description\": \"Delicious beef burger\",\r\n    \"quantity\": 10,\r\n    \"price\": 5.99,\r\n    \"rate\": 4.5,\r\n    \"on_sale\": true\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:8000/api/v1/admin/menu-items",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"menu-items"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "show",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "csLcbbaqShTZRSj2Qhz9sR6WvF70vpeNuuotD5gF9709d9c2",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/v1/admin/menu-items/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"menu-items",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "csLcbbaqShTZRSj2Qhz9sR6WvF70vpeNuuotD5gF9709d9c2",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "_method",
+													"value": "PATCH",
+													"type": "text"
+												},
+												{
+													"key": "name",
+													"value": "meat",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "localhost:8000/api/v1/admin/menu-items/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"menu-items",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "delete",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "csLcbbaqShTZRSj2Qhz9sR6WvF70vpeNuuotD5gF9709d9c2",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/v1/admin/menu-items/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"menu-items",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "get all",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "csLcbbaqShTZRSj2Qhz9sR6WvF70vpeNuuotD5gF9709d9c2",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/v1/admin/menu-items",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"menu-items"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "larkin.alexane@schimmel.net",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "password",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/admin/login",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "logout",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "mWG2PhEzXZ9cLJBclHh0E7gXYEkC1QLNaatuB5F7bf477264",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/v1/admin/logout",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "nour",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "noura@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "date_of_birth",
+											"value": "1990-01-01",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "male",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "1234567890",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/user/register",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "noura@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "newpassword",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/user/login",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "logout",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "lniguEpfWkCl6zij3F57wyxE252b69m6pBrilbCs1058d0bb",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/v1/user/logout",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "send otp",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "noura@gmail.com",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/user/send-otp",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"send-otp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "verify otp",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "noura@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "otp",
+											"value": "398679",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/user/verify-otp",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"verify-otp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "reset password",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\": \"94198e4335d29db52e704b03b39d68b4ab222e9237ef15e2fb8f084094723e3c\",\r\n    \"email\": \"noura@gmail.com\",\r\n    \"new_password\": \"newpassword\",\r\n    \"new_password_confirmation\": \"newpassword\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/user/reset-password",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"reset-password"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Api",
+					"item": [
+						{
+							"name": "all categories",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "blFXnXyxhJzwMKIzboz3DfQPY1SOCV02SplSLZXvc67a4ae8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/v1/user/categories",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all restaurants",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "blFXnXyxhJzwMKIzboz3DfQPY1SOCV02SplSLZXvc67a4ae8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/v1/user/restaurants",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"restaurants"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "items",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "blFXnXyxhJzwMKIzboz3DfQPY1SOCV02SplSLZXvc67a4ae8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/v1/user/menu-items",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"menu-items"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
